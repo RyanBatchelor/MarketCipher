@@ -1,5 +1,54 @@
-$primary: blue;
+body{
+    background-image: linear-gradient(90deg, #131317 0%,#211bb5 100%)
+}
+.navbar .btn-outline-light:hover {
+    color: var(--bs-dark);
+  }
+  
+  .navbar {
+    transition: all 0.5s ease-in-out;
+    max-width: 1600px;
+    margin: auto;
+  }
 
-h1{
-    background-color: $primary;
+  main{
+    max-width: 1600px;
+    margin: auto
+  }
+
+  footer{
+    max-width: 1600px;
+    margin: auto
+  }
+
+  .nav-item{
+    white-space: nowrap;
+  }
+
+  .nav-item a{
+    color: #48ABFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar-sticky {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  
+  .navbar-sticky a{
+    color: #fff;
+  }
+
+@media (max-width: 1000px) {
+    .navbar {
+      background: var(--bs-dark);
+    }
+  
+    .navbar a{
+      color: #fff;
+      text-align: left;
+    }
 }
