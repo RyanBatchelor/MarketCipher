@@ -1,9 +1,8 @@
 import React from 'react'
-import Hero from '../Components/Hero'
 
 const GettingStarted = () => {
   return (
-    <Hero />
+    <h1>Getting Started</h1>
   )
 }
 

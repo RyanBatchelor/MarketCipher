@@ -4,8 +4,8 @@ import FadingText from './FadingText';
 
 const Hero = () => {
   return (
-    <section className="getting-started-container">
-      <div className="getting-started-text px-3">
+    <section className="hero-container">
+      <div className="hero-text px-3">
 
         <div className="fade-in-text mb-3">
             <div className="line-one">
@@ -22,7 +22,7 @@ const Hero = () => {
         <p>Any traded asset — Market Cipher is the only trading tool you’ll ever need.</p>
         <p>Bear market? Bull market? <span className='change-life'>It doesn’t matter what the market is doing. With Market Cipher, you could change your whole damn life.</span></p>
       </div>
-      <div className="getting-started-image">
+      <div className="hero-image">
         <img src={candles} alt="" />
       </div>
     </section>
