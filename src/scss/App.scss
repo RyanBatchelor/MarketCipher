@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(90deg, #131317 0%,#211bb5 100%)
+    background-image: linear-gradient(90deg, #131317 0%,#211bb5 100%);
 }
 .navbar .btn-outline-light:hover {
     color: var(--bs-dark);
@@ -42,6 +42,80 @@ body{
     color: #fff;
   }
 
+  .getting-started-container{
+    color: #FFF;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+
+  .getting-started-container h1{
+    font-size: 60px;
+  }
+
+  .getting-started-container p{
+    font-size: 22px;
+  }
+  
+  .getting-started-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .getting-started-image{
+    width: 50%;
+  }
+
+  .getting-started-image img{
+    width: 100%;
+    height: 100%;
+    min-width: 150px;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+
+  .line-one,
+  .line-two,
+  .line-three{
+    width: 100%;
+    height: 70px;
+    font-weight: 600;
+  }
+  
+  /* FadingText.css */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* Added "forwards" to keep final state */
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .whatever{
+    background-color: #5bf9c9;
+    color: #19195D;
+  }
+
 @media (max-width: 1000px) {
     .navbar {
       background: var(--bs-dark);
@@ -51,4 +125,20 @@ body{
       color: #fff;
       text-align: left;
     }
+
+    .getting-started-container{
+      flex-direction: column-reverse;
+      margin-top: 200px;
+    }
+
+    .getting-started-image,
+    .getting-started-text{
+      margin: auto;
+    }
+}
+
+@media(max-width:600px){
+  .navbar img{
+    display: none;
+  }
 }
