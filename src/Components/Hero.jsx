@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
 
         <p>Any traded asset — Market Cipher is the only trading tool you’ll ever need.</p>
-        <p>Bear market? Bull market? It doesn’t matter what the market is doing. With Market Cipher, you could change your whole damn life.</p>
+        <p>Bear market? Bull market? <span className='change-life'>It doesn’t matter what the market is doing. With Market Cipher, you could change your whole damn life.</span></p>
       </div>
       <div className="getting-started-image">
         <img src={candles} alt="" />
