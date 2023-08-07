@@ -324,7 +324,7 @@
 //Getting Started Section
 .getting-started-container{
   background-color: #19195d;
-  height: 50vh;
+  min-height: 50vh;
   padding: 1rem;
 }
 
@@ -406,6 +406,7 @@
   .discord-content-right{
       margin: auto;
       width: 50%;
+      text-align: center;
   }
 
   .discord-content-left{
