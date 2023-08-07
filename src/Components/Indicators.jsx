@@ -1,18 +1,21 @@
 import React from 'react'
 import { useState } from 'react';
 import IndicatorCard from './IndicatorCard'
-import MCA from '../images/Indicator_A_OFF-x.png'
-import MCSR from '../images/Indicator_SR_OFF-x.png'
-import MCDBSI from '../images/Indicator_DBSI_OFF-x.png'
-import MCB from '../images/Indicator_B_OFF.png'
-import MCB2 from '../images/Indicator_B2_OFF-x.png'
+import MCAOff from '../images/Indicator_A_OFF-x.png'
+import MCSROff from '../images/Indicator_SR2_OFF-x.png'
+import MCDBSIOff from '../images/Indicator_DBSI_OFF-x.png'
+import MCBOff from '../images/Indicator_B2_OFF-x.png'
+import MCA from '../images/IndicatorA.png'
+import MCSR from '../images/IndicatorSr.png'
+import MCDBSI from '../images/IndicatorDBSI.png'
+import MCB from '../images/IndicatorB.png'
 
 const Indicators = () => {
     const cardsData = [
-        { borderColor: 'red', title: 'A', image: `${MCA}`, content: 'Trend Analysis' },
-        { borderColor: 'blue', title: 'B', image: `${MCB2}`, content: 'Oscillator Package' },
-        { borderColor: 'green', title: 'SR', image: `${MCSR}`, content: 'Support & Resistance' },
-        { borderColor: 'purple', title: 'DBSI', image: `${MCDBSI}`, content: 'Dual Band Strength Index' },
+        { borderColor: '#0060ff', title: 'A', image: `${MCAOff}`, content: 'Trend Analysis' },
+        { borderColor: '#4bc2ae', title: 'B', image: `${MCBOff}`, content: 'Oscillator Package' },
+        { borderColor: '#b3a91f', title: 'SR', image: `${MCSROff}`, content: 'Support & Resistance' },
+        { borderColor: '#d44870', title: 'DBSI', image: `${MCDBSIOff}`, content: 'Dual Band Strength Index' },
       ];
     
       const [activeCardIndex, setActiveCardIndex] = useState(-1);

@@ -133,15 +133,13 @@
 
   //About Section
   .about-container{
-    width: 100%;
-    min-height: 90vh;
     background-color: #413BCA;
   }
 
   .about-content{
     max-width: 1600px;
     margin: auto;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     color: #f4f7f8;
   }
@@ -153,6 +151,7 @@
   .about-left,
   .about-right{
     width: 50%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,6 +160,10 @@
 
   .about-left{
     text-align: center;
+  }
+  
+  .about-left img{
+    width: 100%;
   }
 
   .about-plus{
@@ -177,7 +180,7 @@
 
   .indicator-content{
     max-width: 1600px;
-    height: 100%;
+    min-height: 90vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -185,7 +188,6 @@
     justify-content: center;
     color: #FFF;
     text-align: center;
-    border: #131317 1px solid;
   }
   //Indicator Section
 
@@ -194,7 +196,7 @@
     height: 500px;
     color: #FFF;
     text-align: center;
-    border: 5px solid;
+    border: 3px solid;
     margin: 10px;
     padding: 10px;
     display: inline-block;
@@ -236,14 +238,29 @@
       flex-direction: column-reverse;
     }
 
+    .hero-image,
+    .hero-text{
+      width: 100%;
+      text-align: center;
+    }
+
+
+    .about-container{
+      min-height: 100vh;
+    }
     .about-content{
       flex-direction: column;
     }
 
-    .hero-image,
-    .hero-text{
-      margin: auto;
+    .about-right,
+    .about-left{
+      width: 100%;
+      text-align: center;
     }
+    .about-left img{
+      width: 100%;
+    }
+
 }
 
 @media(max-width:600px){
