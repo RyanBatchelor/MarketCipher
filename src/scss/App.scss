@@ -235,7 +235,8 @@
 }
 
 .review-content{
-    max-width: 1600px;
+    max-width: 1000px;
+    margin: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -272,7 +273,6 @@
 }
 
 .review-content p{
-    max-width: 1000px;
     font-size: 20px;
 }
 
@@ -287,6 +287,78 @@
 
 .review-content .btn:hover{
     background-color: #19195d;
+}
+
+//Discord Section
+.discord-container{
+  background-color: #15153a;
+  height: 70vh;
+  display: flex;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.discord-content-left{
+  height: 100%;
+  width: 70%;
+  background-image: url('../images/Discord-scene-and-logo2-01.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.discord-content-right{
+  color: #fff;
+  font-size: 1.5rem;
+  width: 30%;
+  height: 100%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.discord-content h1{
+  margin: 1rem;
+}
+
+//Getting Started Section
+.getting-started-container{
+  background-color: #19195d;
+  height: 50vh;
+  padding: 1rem;
+}
+
+.getting-started-content{
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+}
+
+.getting-started-content h1{
+  font-size: 2rem;
+}
+
+.getting-started-content p{
+  font-size: 1.5rem;
+}
+
+.getting-started-content button{
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: #115cf1 3px solid;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 50px;
+}
+
+.getting-started-content button:hover{
+  background-color: #48abff;
 }
 
 //media queries
@@ -324,10 +396,35 @@
       width: 100%;
     }
 
+    .discord-container{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .discord-content-right{
+      margin: auto;
+      width: 50%;
+  }
+
+  .discord-content-left{
+      min-width: 500px;
+  }
+
 }
 
 @media(max-width:600px){
   .navbar img{
     display: none;
+  }
+}
+
+@media(max-width:500px){
+  .discord-content-left{
+      display: none;
+  }
+  .discord-content-right{
+      width: 100%;
   }
 }
