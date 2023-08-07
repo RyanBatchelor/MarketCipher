@@ -37,7 +37,7 @@ const Indicators = () => {
 
   return (
     <section className="indicator-container">
-        <div className="indicator-content">
+        <div className="indicator-content p-3">
             <div className="indicator-text">
                 <h1>The 4 Indicators in Market Cipher</h1>
                 <p>Quickly analyze, isolate, and anticipate what is happening in the market and capitalize on those insights.</p>
