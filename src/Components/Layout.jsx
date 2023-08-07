@@ -9,7 +9,7 @@ import Footer from '../Components/Footer'
 
 const Layout = () => {
   return (
-    <div className="site-container">
+    <>
         <Navbar />
         <main className="mt-6">
           <Outlet />
@@ -17,7 +17,7 @@ const Layout = () => {
         <footer>
           <Footer />
         </footer>
-    </div>
+    </>
   )
 }
 

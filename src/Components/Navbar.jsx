@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Add the conditional check for the navbar-collapse class */}
         <div className={`collapse navbar-collapse ${isExpanded ? 'show' : ''}`} id="navbarNavDropdown">
-            <ul className="navbar-nav ms-auto">
+            <ul className="nav-content navbar-nav ms-auto">
             <li className="nav-item px-3">
                 <Link to="/">Home</Link>
             </li>
