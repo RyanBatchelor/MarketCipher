@@ -226,6 +226,69 @@
     width: 100%;
   }
 
+  //Review Section
+
+  .review-container{
+    background-color: #413bca;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.review-content{
+    max-width: 1600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #e9e9f9;
+}
+
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote-text{
+    background-color: #fff;
+    color: #242465;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.review-content img{
+    width: 50px;
+    height: 50px;
+    margin: -10px;
+    padding: 0;
+    
+}
+
+.review-content p{
+    max-width: 1000px;
+    font-size: 20px;
+}
+
+.review-content .btn{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid #1d57ee;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.review-content .btn:hover{
+    background-color: #19195d;
+}
+
 //media queries
 
 @media (max-width: 1000px) {
