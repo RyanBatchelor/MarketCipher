@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
         <nav className={`navbar navbar-expand-lg fixed-top navbar-dark ${isSticky ? 'bg-dark navbar-sticky' : ''}`}>
         <div className="container">
-            <img src={logo} alt="" width="330" className='pt-3'/>
+            <img src={logo} alt="" width="200" className='pt-3'/>
         </div>
 
         <button

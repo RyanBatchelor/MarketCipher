@@ -11,7 +11,7 @@ const Layout = () => {
   return (
     <>
         <Navbar />
-        <main className="mt-6">
+        <main>
           <Outlet />
         </main>
         <footer>

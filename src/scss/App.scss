@@ -14,6 +14,7 @@
 
   main{
     margin: auto;
+    margin-top: 4rem;
   }
 
   .nav-item{
@@ -374,7 +375,9 @@
 
 .footer-bottom{
   background-color: black;
-  height: 30px;
+  min-height: 30px;
+  margin: none;
+  padding: none;
 }
 
 .commissions{
@@ -396,6 +399,11 @@
 .footer-bottom-content{
   text-align: center;
   color: #3a84ff;
+  margin: none;
+}
+
+.footer-bottom-content p{
+  margin: 0;
 }
 
 

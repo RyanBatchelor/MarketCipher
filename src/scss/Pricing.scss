@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.pricing-hero{
+    background-image: linear-gradient(90deg, #131317 0%,#211bb5 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-content{
+    display: grid;
+    max-width: 1600px;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    color: #fff;
+}
+
+.pricing-hero::after{
+    background-image: url(../images/final-blue-candles_perspective_banner-01.svg);
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    bottom: 0px;
+    right: 0;
+    background-position: right bottom;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.pricing-heading{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin-top: auto;
+    font-size: 60px;
+}
+.pricing-paragraph{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-size: 22px;
+    line-height: 2.5rem;
+}
+
+.pricing-image{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.pricing-image img{
+    width: 100%;
+}
+
+.pricing-main-pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.pro-img img{
+    width: 90%;
+}
+
+.pro-indicators{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pro-mca,
+.pro-mcb,
+.pro-mcsr,
+.pro-mcdbsi{
+    max-width: 300px;
+}
+
+.pricing-main-buy{
+    text-align: center;
+}
+
+.pricing-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.pricing-card{
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.best-value{
+    height: 500px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-value-inner{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.best-value-inner > *{
+    margin: 1rem;
+}
+
+.pricing-main-video{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.discord-email{
+    word-break: break-word;
+}
+
+@media(max-width: 1000px){
+    .pricing-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        text-align: center;
+    }
+
+    .pricing-hero::after{
+        display: none;
+    }
+    .pricing-heading{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    .pricing-paragraph{
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    
+    .pricing-image{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .pricing-main-pro{
+        flex-direction: column;
+    }
+
+    .pricing-cards{
+        flex-direction: column;
+    }
+    .pricing-card{
+        height: 300px;
+        width: 500px;
+        max-width: 100%;
+        margin: 15px 0;
+        padding: .5rem;
+    }
+    .best-value{
+        height: 400px;
+        width: 500px;
+        max-width: 100%;
+    }
+    .best-value-inner > *{
+        margin: .5rem;
+    }
+    .pro-text{
+       padding: 1rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .pro-text h1{
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px){
+    .pro-text{
+        text-align: center;
+    }
+
+    .pro-perks ul{
+        list-style: none;
+    }
+    .pro-indicators{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing-main-video{
+        display: none;
+    }
+
+}

@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.learn-container{
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+
+.learn-header{
+    padding: 1rem;
+}
+
+h1{
+    margin: 0;
+}
+
+.learn-content{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.learn-cards{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.learn-card{
+    max-width: 46%;
+    min-width: 350px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.learn-card img{
+    width: 100%;
+}
+
+.contact{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.contact-img{
+    max-width: 50%;
+}
+.contact-img img{
+    width: 100%;
+}
+
+.contact-text{
+    margin: 2rem;
+    padding: 1rem;
+    max-width: 50%;
+}
+
+.contact-card{
+    margin: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+    
+}
+
+.contact-card h1{
+    margin-bottom: 1rem;
+}
+
+
+@media(max-width: 1055px){
+    .learn-card{
+        margin: auto;
+    }
+
+    .contact{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    
+    .contact-text{
+        margin: 0;
+    }
+
+    .inqueries p,
+    .discord-issues p{
+        word-wrap: break-word;
+    }
+}
+
+@media(max-width: 750px){
+    .learn-card{
+        width: 90%;
+        max-width: none;
+        min-width: 0px;
+    }
+
+    .contact-text{
+        margin: 2rem;
+        padding: 1rem;
+        max-width: 90%;
+    }
+}
